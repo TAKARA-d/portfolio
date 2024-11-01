@@ -1,0 +1,164 @@
+
+/* body全体のスタイル */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: linear-gradient(135deg, #87CEEB, #ffffff); /* 空色と白のグラデーション */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* 縦方向に並べる */
+    align-items: center;
+}
+
+/* コンテナのスタイル */
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    margin-top: 20px; /* 上にスペースを追加 */
+}
+
+/* 見出しのスタイル */
+h1 {
+    color: #333;
+    margin: 20px 0; /* 上下にスペースを確保 */
+    text-align: center; /* 中央揃え */
+}
+
+/* テーブルのスタイル */
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-spacing: 10px;
+}
+
+td {
+    color: #333;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+/* 入力フィールドのスタイル */
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+}
+
+/* ラジオボタン */
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* ボタンのスタイル */
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background: #1e90ff;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #87cefa;
+}
+
+/* リンクのスタイル */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* プルダウンメニューのスタイル（他と統一する） */
+select {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23333" d="M2 0L0 2h4z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 12px 12px;
+}
+
+/* フォーカス時のスタイル（他の要素と同じにする） */
+select:focus {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+/* 商品画像のスタイル */
+.product-image {
+    width: 100%; /* 親要素（セル）の幅いっぱいに設定 */
+    height: auto; /* 高さは幅に応じて自動調整 */
+    max-width: 150px; /* 最大幅を150pxに設定 */
+    max-height: 150px; /* 最大高さを150pxに設定 */
+    object-fit: cover; /* 画像のアスペクト比を保ちながらフィットさせる */
+    display: block; /* ブロック要素として表示 */
+    margin: 0 auto; /* 中央揃え */
+    border-radius: 10px; /* 角を丸くする */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 影をつける */
+}
+
+
+
+.nav-link {
+    display: inline-block; /* リンクをインラインブロックに設定 */
+    width: 50px; /* リンクの幅を均一に設定 */
+    text-align: center; /* テキストを中央揃え */
+    padding: 10px 0; /* 上下に余白を追加 */
+    text-decoration: none; /* 下線を削除 */
+    color: #333; /* テキストの色 */
+    border-radius: 5px; /* 角を少し丸く */
+}
+
+.nav-link:hover {
+    background-color: #f0f0f0; /* ホバー時の背景色 */
+}
+
+.label {
+    display: inline-block; /* ラベルをインラインブロックに設定して横に並べる */
+    margin-right: 5px; /* 「日」とselectの間にスペースを追加 */
+    vertical-align: middle; /* ラベルとselectの高さを揃える */
+}
+
+select {
+    width: 60px; /* 幅を調整 */
+    padding: 5px; /* 内側に余白を追加 */
+    font-size: 14px; /* フォントサイズを調整 */
+    border-radius: 5px; /* 角を丸くする */
+    -webkit-appearance: none; /* デフォルトの矢印を無効化（Webkitブラウザ用） */
+    -moz-appearance: none; /* デフォルトの矢印を無効化（Firefox用） */
+    appearance: none; /* デフォルトの矢印を無効化 */
+    background-color: white; /* 背景色を白に */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 6"><path fill="%23000000" d="M0 0l5 6 5-6H0z"/></svg>'); /* 下向きのカスタム矢印 */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* 矢印の位置を調整 */
+    background-size: 12px 12px; /* 矢印のサイズを調整 */
+}
