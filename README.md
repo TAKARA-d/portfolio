@@ -27,19 +27,19 @@
 ## ディレクトリ構成とファイルの用途
 
 ### 1. **JSPファイル**
-   - **login.jsp**: ログインページ。ユーザーがログイン情報を入力するためのページ。
+   - **login.jsp**: ログインページ。ユーザーがログイン情報を入力するためのページ。![アプリのスクリーンショッ](ec_takara/src/main/webapp/image/image1.png)
    - **fail.jsp**: エラーページ。ログインが失敗した際に表示されます。
-   - **member.jsp**: 会員登録ページ。会員情報を入力します。
-   - **member_check.jsp**:入力された会員登録情報の確認ページです。
-   - **shohin.jsp**:商品の一覧を表示するページで、各商品をクリックすると詳細ページに遷移します。
-   - **syousai.jsp**: 商品詳細ページ。選択した商品の詳細情報を表示。
-   - **cart.jsp**: カートページ。選択した商品を確認・削除できます。
-   - **buy.jsp**: 購入手続き開始ページ。カートの内容を表示し、購入を進めるボタンが表示されます。
-   - **complete.jsp**: 購入完了ページ。購入が成功したことをユーザーに通知します。
+   - **member.jsp**: 会員登録ページ。会員情報を入力します。![アプリのスクリーンショッ](ec_takara/src/main/webapp/image/image2.png)
+   - **member_check.jsp**:入力された会員登録情報の確認ページです。![アプリのスクリーンショッ](ec_takara/src/main/webapp/image/image3.png)
+   - **shohin.jsp**:商品の一覧を表示するページで、各商品をクリックすると詳細ページに遷移します。![アプリのスクリーンショッ](ec_takara/src/main/webapp/image/image4.png)
+   - **syousai.jsp**: 商品詳細ページ。選択した商品の詳細情報を表示。![アプリのスクリーンショッ](ec_takara/src/main/webapp/image/image5.png)
+   - **cart.jsp**: カートページ。選択した商品を確認・削除できます。![アプリのスクリーンショッ](ec_takara/src/main/webapp/image/image6.png)
+   - **buy.jsp**: 購入手続き開始ページ。カートの内容を表示し、購入を進めるボタンが表示されます。![アプリのスクリーンショッ](ec_takara/src/main/webapp/image/image7.png)
+   - **complete.jsp**: 購入完了ページ。購入が成功したことをユーザーに通知します。![アプリのスクリーンショッ](ec_takara/src/main/webapp/image/image8.png)
    - **total.jsp**: 管理者ページのトップページ。管理者が売上やユーザー活動の概要を効率的に確認・管理する。
-   - **bought.jsp**: 購入の詳細を年齢層やジャンルごとに一覧表示。フィルタリングやソート機能が含まれています。
-   - **bought2.jsp**: bought.jspと連携し、さらに詳細な情報や購買データを確認。カテゴリ分けや年齢層別の集計を表示します。
-   - **logout.jsp**: ログアウト完了ページ。セッションを終了し、ログアウト完了を表示。
+   - **bought.jsp**: 購入の詳細を年齢層やジャンルごとに一覧表示。フィルタリングやソート機能が含まれています。![アプリのスクリーンショッ](ec_takara/src/main/webapp/image/image10.png)
+   - **bought2.jsp**: bought.jspと連携し、さらに詳細な情報や購買データを確認。カテゴリ分けや年齢層別の集計を表示します。![アプリのスクリーンショッ](ec_takara/src/main/webapp/image/image11.png)
+   - **logout.jsp**: ログアウト完了ページ。セッションを終了し、ログアウト完了を表示。![アプリのスクリーンショッ](ec_takara/src/main/webapp/image/image9.png)
 ### 2. **Javaコントローラーとビーン**
    - **LoginFilter.java**: ログイン状態を確認し、未ログインユーザーをリダイレクトするフィルタ。
    - **LoginController.java**: ログイン処理を管理するサーブレット。
